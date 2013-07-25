@@ -1,0 +1,149 @@
+/* Stylesheet for Exhibition - Designed by Sayid Moghadam - i@sayid.ir */
+@font-face {
+  font-family: 'Mj_Flow';
+  src: url('Mj_Flow.eot') format('eot'),  /* IE6–8 */
+       url('Mj_Flow.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('Mj_Flow.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+*{outline:none;border:none;padding:0;margin:0;}
+body{color:#333333;font-family:tahoma;font-size:12px;position:relative;overflow:hidden;}
+select,option,input{font-family:tahoma;font-size:12px;color:#333333;}
+a{text-decoration:none;}
+.clear{clear:both;width:100%;height:2px;}
+.efont{font-family:skippy-sharpie !important;font-size:22px;}
+.posRel{position:relative;}
+.displayOff{display:none;}
+.displayOn{display:block;}
+.bodyContent h1{color:#C00D00;display:inline;font-size:12px;font-weight:normal;} /*  color red for content  */
+.bodyContent h2{color:#58A31C;display:inline;font-size:12px;font-weight:normal;} /*  color green for content  */
+.bodyContent h3{color:#D8A70C;display:inline;font-size:12px;font-weight:normal;} /*  color yellow for content  */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+#preloader{
+	-webkit-transition: opacity 1s ease-in;
+	-moz-transition: opacity 1s ease-in;
+	-o-transition: opacity 1s ease-in;
+	position: fixed;
+	top: 0;bottom: 0;left: 0;right: 0;
+	z-index: 1000;
+	opacity: 1;
+	background: white;
+}
+.centerScreen{
+	position:absolute;
+	width:400px;
+	bottom: 80px;
+	right:200px;
+	height:30px;
+}
+#loadingGif{width:30px;height:30px;background-color:#666;float:right;position:relative;}
+#pleasWait{padding:7px 40px 0 0;direction:rtl;}
+#preloader.fade_out{opacity:0;}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.bgPictureHolder{position:relative;float:left;height:81px;width:144px;overflow:hidden;}
+.bgPictureHolder:hover > img.colored{opacity:1;}
+.bgPictureHolder img{
+	display:block;
+	position:absolute;
+	top:0;left:0;
+	-webkit-transition: opacity 0.3s ease-in;
+	-moz-transition: opacity 0.3s ease-in;
+	-o-transition: opacity 0.3s ease-in;
+}
+img.colored{z-index:11;opacity:0;}
+img.blackwhite{z-index:10;}
+.container{width:1008px;position:fixed;top:0;left:0;z-index:11;}
+.containerHolder{width:100%;position:relative;}
+#centerStone{width:144px;position:absolute;top:0;left:432px;background-color:#fff;z-index:100;box-shadow:0 1px 9px 0 rgba(0, 0, 0, 0.3);}
+#poster{
+	width:144px;
+	height:486px;
+	background-image:url(../images/stone.jpg);
+}
+#eyeLogo{width:144px;height:81px;display:block;position:absolute;bottom:0;}
+#eyeLogoHolder{width:144px;height:81px;position:relative;}
+.eye{width:144px;height:81px;background-image:url(../images/eyeLogo.jpg);position:absolute;left:0;top:0;}
+.eyeup{background-position:0 0;z-index:101;}
+.eyedown{background-position:0 81px;opacity:0;z-index:102;}
+.leftContent{width:432px;height:100%;position:absolute;top:0;left:0;}
+.rightContent{width:432px;height:100%;position:absolute;top:0;right:0;}
+.leftConHolder{width:100%;height:100%;position:relative;}
+.rightConHolder{width:100%;height:100%;position:relative;}
+.linkMenu{width:288px;height:81px;position:absolute;z-index:99;overflow:hidden;}
+.linkMenu a{width:288px;height:81px;display:block;position:relative;}
+.leftConHolder .linkMenu{right:0;background-color:#53BCE8;}
+.rightConHolder .linkMenu{left:0;background-color:#3EC48D;}
+.p1{top:81px;}.p2{top:243px;}.p3{top:405px;}.p4{top:567px;}.p5{top:729px;}
+.pointer, .reversePointer{width:17px;height:31px;background-image:url(../images/arrow.png);position:absolute;top:25px;}
+.leftConHolder .pointer{left:23px;background-position:17px 0;}
+.rightConHolder .pointer{right:23px;background-position:0 0;}
+.leftConHolder .reversePointer{left:23px;background-position:0 0;}
+.rightConHolder .reversePointer{right:23px;background-position:17px 0;}
+.linkValue{font-family:Mj_Flow;font-size:20px;color:#fff;width:210px;position:absolute;top:25px;}
+.leftConHolder .linkValue{right:15px;direction:rtl;}
+.rightConHolder .linkValue{left:15px;}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.menuContent{width:432px;height:567px;position:absolute;left:0;top:81px;z-index:99;background-color:#fff;}
+.titleContent{width:100%;height:81px;cursor:pointer;}
+.bodyContent{padding:20px 24px;line-height:22px;direction:rtl;overflow:auto;height:445px;}
+.leftContent .titleContent{background-color:#53BCE8;}
+.rightContent .titleContent{background-color:#3EC48D;}
+.w0{width:0;}
+.voteTextarea{
+	border:1px solid #eaeaea;
+	width:calc( 100% - 16px );
+	padding:4px 8px;
+	height:100px;
+	resize:none;
+	margin-top:10px;
+	font-family:tahoma;
+	font-size:12px;
+}
+.emailInput, .userInput{border:1px solid #eaeaea;width:calc( 100% - 20px );padding:8px 10px;margin:4px 0;}
+.secureInput{border:1px solid #eaeaea;padding:8px 10px;margin:4px -2px;float:left;width:20px;}
+.securImg{float:right;margin:3px;margin-left:0;}
+.submitBtn{width:369px;text-align:center;padding:6px 0;margin-top:8px;background-color:#53BCE8;cursor:pointer;color:#fff;}
+.submitBtn:hover{background-color:#39A2D0;}
+/*  ----  */
+.voteLine{width:100%;position:relative;min-height:80px;margin:10px 0;}
+.voteNumber{
+	width:35px;
+	height:35px;
+	background-color:#D8E6EB;
+	overflow:hidden;
+	font-family:arial;
+	font-size:36px;
+	color:#53BCE8;
+	display:inline-block;
+}
+.voteUser{position:absolute;top:-4px;right:45px;color:#167AA5;}
+.voteDate{position: absolute;top: 14px;right: 45px;direction: ltr;color:#c5c5c5;}
+.voteContent{width:100%;}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.counter{color:#D8A70C;display:inline;font-size:12px;}
+.rowPointer{width:15px;height:15px;margin:5px 0 0 8px;background-image:url(../images/rowPointer.png);float:right;}
+.blueRow{background-position:15px 0;}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.admins{width:366px;height:80px;position:relative;background-color:#f1f1f1;border:1px solid #e1e1e1;cursor:help;margin:10px 0;}
+.admins:hover{background-color:#e7e7e7;}
+.adminImgBox{width:80px;height:80px;overflow:hidden;position:absolute;top:0;right:0;border-left:1px solid #e1e1e1;}
+.adminImgShadow{
+	position:absolute;
+	right:-40px;
+	top:-40px;
+	width:160px;
+	height:160px;
+	background-image:url(../images/imgShadow.png);
+	transition:width 0.3s, height 0.3s;
+	-moz-transition:width 0.3s, height 0.3s, -moz-transform 0.3s; /* Firefox 4 */
+	-webkit-transition:width 0.3s, height 0.3s, -webkit-transform 0.3s; /* Safari and Chrome */
+	-o-transition:width 0.3s, height 0.3s, -o-transform 0.3s; /* Opera */
+}
+.admins:hover > .adminImgBox .adminImgShadow{
+	transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	-webkit-transform: scale(0.6);
+	-o-transform: scale(0.6);
+}
+.adminName{position:absolute;right:95px;bottom:30px;font-family:Mj_Flow;font-size:14px;color:#1275B6;}
+.adminDetail{position:absolute;right:95px;bottom:10px;font-family: Mj_Flow;color:#999;}
